@@ -1,0 +1,8 @@
+node_modules
+tmp
+
+.env
+database.yml
+
+# This is provided by running: yarn (build | build:prod)
+public

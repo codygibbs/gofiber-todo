@@ -1,0 +1,16 @@
+{{define "todo-list"}}
+  {{if len .}}
+    <ul class="divide-y divide-gray-200">
+    {{range .}}
+      <li class="py-4 flex">
+        <div class="ml-3">
+          <p class="text-sm font-medium">{{.Title}}</p>
+          <p class="text-sm text-gray-500">{{.Description}}</p>
+        </div>
+      </li>
+    {{end}}
+    </ul>
+  {{else}}
+    <strong>There are no todos on your list.</strong>
+  {{end}}
+{{end}}

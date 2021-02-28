@@ -1,0 +1,17 @@
+<div class="panel">
+  <div class="panel--header">
+    <h3 class="text-lg leading-6 font-medium">
+      Things To Do
+    </h3>
+    <p class="mt-1 max-w-2xl text-sm text-gray-500">
+      You have {{len .Todos}} thing(s) on your list.
+    </p>
+  </div>
+  <div class="panel--body">
+    {{template "todo-list" .Todos}}
+  </div>
+</div>
+
+<div class="pt-4">
+  {{template "todo-form"}}
+</div>
